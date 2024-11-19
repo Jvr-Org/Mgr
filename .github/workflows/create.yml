@@ -17,7 +17,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Creating GitHub Organization Repository
-        uses: create-repo
+        uses: ./create-repo
         id: create-repo
         with:
           repo-name: '${{ github.event.inputs.repo-name }}'
